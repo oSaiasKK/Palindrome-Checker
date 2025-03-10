@@ -1,0 +1,61 @@
+html {
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+body {
+    margin: 0;
+    min-height: 99%;
+    min-width: 99%;
+}
+
+header {
+    background-color: #22223b;
+    text-align: center;
+    padding: 2.5vh;
+    border: 3vh ridge #4a4e69 ;
+}
+
+main {
+    margin: 0;
+    background-color: #9a8c98;
+    border: 3vh ridge #746171 ;
+    text-align: center;
+    height:  50vh;
+    overflow: hidden;
+    transition: .2s;
+}
+
+main input {
+    margin-top: 5vh;
+    border-radius: 3vh;
+    height: 5vh;
+}
+
+main button {
+    border-radius: 3vh;
+    height: 5vh;
+}
+
+main button:hover {
+    transform: scale(1.15);
+}
+
+main div#result {
+    margin-top: 2.5vh;
+    font-size: 5vh;
+    font-weight: normal;
+}
+
+footer {
+    margin: 0;
+    height: 17vh;
+    background-color: #c9ada7;
+    border: 3vh ridge #f2e9e4;
+}
