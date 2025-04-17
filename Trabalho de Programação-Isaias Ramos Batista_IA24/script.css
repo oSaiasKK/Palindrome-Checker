@@ -1,0 +1,140 @@
+html {
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9a8c98;
+}
+
+header {
+    background-color: #22223b;
+    text-align: center;
+    padding: 25px 15px;
+    border: 10px ridge #4a4e69;
+    color: whitesmoke;
+    flex-shrink: 0;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 4vh, 3rem);
+    margin: 0;
+    line-height: 1.2;
+}
+
+main {
+    background-color: #9a8c98;
+    border: 10px ridge #746171;
+    text-align: center;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    transition: .2s;
+}
+
+main input {
+    margin-top: 3vh;
+    height: 40px;
+    padding: 0 12px;
+    border: 5px ridge;
+    max-width: 60%;
+    font-size: 1rem;
+}
+
+main div#result {
+    min-height: 30vh;
+    height: fit-content;
+    min-width: 50vh;
+    width: fit-content;
+    max-width: 90vw;
+    border: 5px ridge #746171;
+    background-color: whitesmoke;
+    margin: auto;
+    overflow-y: auto;
+}
+
+main button {
+    height: 40px;
+    padding: 0 15px;
+    border: 5px ridge gray;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+main button:hover {
+    transform: scale(1.05);
+}
+
+main div#result {
+    margin-top: 2.5vh;
+    font-size: clamp(1.5rem, 3.5vh, 2.5rem);
+    font-weight: normal;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+footer {
+    background-color: #c9ada7;
+    border: 10px ridge #f2e9e4;
+    padding: 20px 10px;
+    text-align: center;
+    flex-shrink: 0;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    main input {
+        max-width: 75%;
+        height: 36px;
+    }
+
+    main button {
+        height: 36px;
+        padding: 0 10px;
+        margin: auto;
+        margin-top: 3vh;
+    }
+
+    header {
+        padding: 18px 10px;
+        border-width: 6px;
+    }
+
+    main {
+        padding: 15px;
+        border-width: 6px;
+    }
+
+    main div#result {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px 10px;
+        border-width: 6px;
+    }
+
+    main div#result {
+         font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+}
